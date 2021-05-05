@@ -7,4 +7,4 @@ FROM gitpod/workspace-full
 # More information: https://www.gitpod.io/docs/config-docker/
 
 RUN git clone https://github.com/flutter/flutter.git -b stable --single-branch ~/flutter
-RUN export PATH="$PATH:~/flutter/bin"
+ENV PATH="$PATH:~/flutter/bin"
