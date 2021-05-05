@@ -5,4 +5,6 @@ FROM gitpod/workspace-full
 # RUN brew install bastet
 #
 # More information: https://www.gitpod.io/docs/config-docker/
-RUN snap install flutter --classic
+
+RUN git clone https://github.com/flutter/flutter.git -b stable --single-branch ~/flutter
+RUN export PATH="$PATH:~/flutter/bin"
